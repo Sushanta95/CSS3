@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example of Radial Gradient corners</title>
+	<style type="text/css">
+		#grad1{
+			height: 400px;
+			width: 400px;
+			background-image: radial-gradient(farthest-side at left bottom,red,yellow,cyan);
+			
+		}
+		#grad2{
+			height: 400px;
+			width: 400px;
+			background-image: radial-gradient(farthest-corner at right bottom,red,yellow,cyan);
+			
+		}
+		#grad3{
+			height: 400px;
+			width: 400px;
+			background-image: radial-gradient(closest-side,red,yellow,cyan);
+			
+		}
+		#grad4{
+			height: 400px;
+			width: 400px;
+			background-image: radial-gradient(closest-corner,red,yellow,cyan);
+			
+		}
+	</style>
+</head>
+<body>
+     <h3>Corners-Gradient</h3>
+     <p>The Radial Gradient Corners.</p>
+
+     <h3>farthest-side at left bottom</h3>
+     <div id="grad1"></div>
+     <br>
+     <br>
+
+     <h3>farthest-corner at right bottom</h3>
+     <div id="grad2"></div>
+     <br>
+     <br>
+
+     <h3>closest-side</h3>
+     <div id="grad3"></div>
+     <br>
+     <br>
+
+     <h3>closest-corner</h3>
+     <div id="grad4"></div>
+</body>

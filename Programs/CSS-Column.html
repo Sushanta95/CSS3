@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of css columns</title>
+    <style type="text/css">
+        h2{
+            text-align: center;
+        }
+        div{
+            /*columns: auto; */
+           columns: 100px 4;
+           border: 1px solid;
+           font-size: 20px;
+        }
+        .columns-4{
+            columns: 100px 4;
+        }
+        .columns-6{
+            columns: 50px 6;
+        }
+</style>
+</head>
+<body>
+    <h2>Example with 4 Columns:</h2>
+
+     <div class="columns-4">Intel Core i3 Processor; Mobile HM77 Express Chipset; Windows 8 Operating System; 2 GB RAM; 15.6 Inch Screen Size. 500 GB HDD; Intel HD Graphics 4000; Speakers ...
+        Build and Design: SAMSUNG 300E Series NP...
+        Operating System: It comes preloaded with Wi...
+        Memory and Storage: It has 2 GB DDR3 RAM
+    </div>
+
+
+    <h2>Example with 6 Columns:</h2>
+    <div class="columns-6">Intel Core i3 Processor; Mobile HM77 Express Chipset; Windows 8 Operating System; 2 GB RAM; 15.6 Inch Screen Size. 500 GB HDD; Intel HD Graphics 4000; Speakers ...
+        Build and Design: SAMSUNG 300E Series NP...
+        Operating System: It comes preloaded with Wi...
+        Memory and Storage: It has 2 GB DDR3 RAM
+    </div>
+</body>
+</html>

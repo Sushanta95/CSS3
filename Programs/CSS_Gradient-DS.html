@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example of Radial Gradient Differently Spaced</title>
+	<style type="text/css">
+		#grad1{
+			height: 150px;
+			width: 200px;
+			background: -webkit-radial-gradient(blue5%,green15%,red60%);
+			/* For-safari 5.1 to 6.0 */
+			background: -o-radial-gradient(blue5%,red60%, green15%);
+			/* For-Opera 11.1 to 12.0 */
+			background: -moz-radial-gradient(blue5%,red60%, green15%);
+			/* For-Firefox 3.6 to 15 */
+			background: radial-gradient(blue5%,red60%, green15%);
+			/* Standard syntax(must be last) */
+		}
+	</style>
+</head>
+<body>
+     <h3>Radial-Gradient</h3>
+
+     <p>The Radial Gradient Differently Spaced.It will show transition in  blue red and green.</p>
+     <div id="grad1"></div>
+</body>

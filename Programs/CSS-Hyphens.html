@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of css Hyphens</title>
+    <style type="text/css">
+        h2{
+            text-align: center;
+        }
+        div{
+          background-color: brown;
+          width: 100px;
+          border: 1px solid;
+          text-align: center;
+        }
+        .hyphen-none{
+            hyphens: none;
+        }
+        .hyphen-manual{
+            hyphens: manual;
+        }
+        .hyphen-auto{
+            hyphens: auto;
+        }
+</style>
+</head>
+<body>
+
+     <h2>Example hyphen with hyphens: none value.</h2>
+     <div class="hyphen-none">Intel Core i3 Processorrrrrrrrrrrrrrr
+    </div>
+
+
+    <h2>Example hyphen with hyphens: manual</h2>
+    <div class="hyphen-manual">Intel Core i3&shy;Processorrrrrrr&shy;rrrrrrrrrrrrr
+    </div>
+
+    <h2>Example hyphen with hyphens: auto</h2>
+    <div class="hyphen-auto">Intel Core i3 Processorrrrrrrrrrrrrrrr
+    </div>
+
+</body>
+</html>

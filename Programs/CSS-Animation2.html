@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of CSS Animation 2</title>
+    <style type="text/css">
+        body{
+            text-align: center;
+        }
+       div{
+          height: 100px;
+          width: 100px;
+          background-color: red;
+          position: relative;
+          animation: myRectangle 5s;
+          -webkit-animation: myRectangle 5s;
+          animation-iteration-count: infinite;
+    }
+    @keyframes myRectangle{
+       0% {background-color: red; left: 0px; top:0px}
+       25% {background-color: yellow; left: 300px; top:0px}
+       50% {background-color: blue; left: 300px; top:300px}
+       75% {background-color: green; left: 0px; top:300px}
+       100% {background-color: red; left: 0px; top:0px}
+    }
+    @-webkit-keyframes myRectangle{
+        0% {background-color: red; left: 0px; top:0px}
+       25% {background-color: yellow; left: 300px; top:0px}
+       50% {background-color: blue; left: 300px; top:300px}
+       75% {background-color: green; left: 0px; top:300px}
+       100% {background-color: red; left: 0px; top:0px}
+    } 
+</style>
+</head>
+<body>
+    <h3>This is an example of moving rectangle!</h3>
+    <div></div>
+</body>
+</html>

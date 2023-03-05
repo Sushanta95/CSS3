@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of Transition Delay Program 1</title>
+    <style type="text/css">
+        body{
+            text-align: center;
+        }
+        div{
+          margin: 0 auto;
+          height: 100px;
+          width: 400px;
+          border: 2px solid red;
+          font-size: 20px;
+          background-color: lightgreen;
+         transition-property: background-color;
+          transition-duration: 1s;
+          transition-delay: 0.5s; 
+
+          /* For Safari Browser  
+          -webkit-transition-property: background-color;
+          -webkit-transition-duration: 1s;
+          -webkit-transition-delay: 0.5s; */
+    }
+    div:hover{
+        background-color: red;
+    }
+</style>
+</head>
+<body>
+    <h3>Hover the div to change the color!</h3>
+    <div></div>
+</body>
+</html>

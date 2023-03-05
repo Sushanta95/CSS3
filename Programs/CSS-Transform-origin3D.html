@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Transformation origin 3D</title>
+    <style type="text/css">
+        div{
+          height: 100px;
+          width: 400px;
+          border: 5px solid blue;
+          font-size: 20px;
+        }
+        .outer{
+            background-color: lightgreen;
+            margin: 140px;
+        }
+        .box{
+            background: url(Tiger.jpg);
+            transform: rotate3d(3,2,1 75deg);
+            transform-origin: 70% 10% 250px;
+        }
+        .outer1{
+            margin: 350px;
+            background-color: lightblue;
+        }
+        .box1{
+            background: url(Tiger.jpg);
+            transform: rotate3d(3,2,1 45deg);
+            transform-origin: 70px 10px 150px;
+        }
+</style>
+</head>
+<body>
+
+    <div class="outer">
+        Transform-origin: 5% 2%
+        <div class="box"></div>
+    </div>
+
+    <div class="outer1">
+        Transform-origin: 100px 200px;
+        <div class="box1"></div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example of Visibility javascripts</title>
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+		div{
+			margin: 0 auto;
+			width: 200px;
+			border: 1px solid #adadad;
+			background-color: lightseagreen;
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+     <button onclick="hideshow">Hide and show</button>
+     <br><br>
+	<div id="myDiv">
+	This is a division that will get hide and show.</div>
+	<p>The above div will hide and show on click of the button.</p>
+	    
+</body>
+   <script type="text/javascript">
+   	function hideshow(){
+   		if(document.getElementById("myDiv").style.visiblity == "visible"){
+   			document.getElementById("myDiv").style.visiblity = hidden;
+   		} 
+   		else{
+   			document.getElementById("myDiv").style.visiblity = "visible"
+   		}
+   	}
+   </script>
+
+</html>

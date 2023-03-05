@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example of CSS Masking using Image</title>
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+		img{
+			width: 200px;
+			height: 200px;
+		}
+		#masked{
+			width: 200px;
+			height: 200px;
+			-webkit-mask-box-image:url(Tiger.jpg);
+		}
+	</style>
+</head>
+<body>
+     <h2>This is an Example of Masking.</h2>
+     <h3>Original Images</h3>
+
+     <img src="baby_hare-wallpaper-1920x1080.jpg">
+     <img src="Tiger.jpg">
+
+     <h3>Using Masking Effect!</h3>
+     <img src="baby_hare-wallpaper-1920x1080.jpg" id="masked">
+
+</body>
+</html>

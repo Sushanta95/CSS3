@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Transition Delay Program 2</title>
+    <style type="text/css">
+        body{
+            text-align: center;
+        }
+        div{
+          margin: 0 auto;
+          height: 100px;
+          width: 400px;
+          border: 2px solid red;
+          font-size: 20px;
+          background-color: lightgreen;
+          transition-property: width;
+          transition-duration: 1s;
+          /*transition-delay: 0.5s; */
+
+          /* For Safari Browser  
+          -webkit-transition-property: background-width;
+          -webkit-transition-duration: 1s;
+          -webkit-transition-delay: 0.5s; */
+    }
+    div:hover{
+        width: 300px;
+    }
+</style>
+</head>
+<body>
+    <h3>Hover the div to change the width!</h3>
+    <div></div>
+</body>
+</html>

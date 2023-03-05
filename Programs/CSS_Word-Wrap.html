@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of word wrap</title>
+    <style type="text/css">
+        table, table tr td, table tr th{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table{
+            width: 20%;
+        }
+        table tr td, table tr th{
+            /*word-break: normal;
+            word-break: break-word; */
+            word-break: break-all;
+           
+        }
+    </style>
+</head>
+<body>
+      <table>
+        <tr>
+            <th>Employe id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+
+
+        <tr>
+            <td>1</td>
+            <td>ABC</td>
+            <td>DEF</td>
+        </tr>
+
+
+        <tr>
+            <td>2</td>
+            <td>ABChyrh</td>
+            <td>DEFnhkiuy</td>
+        </tr>
+
+
+        <tr>
+            <td>3</td>
+            <td>ABCdfg</td>
+            <td>DEFfdbdf</td>
+        </tr>
+      </table>
+</body>
+</html>

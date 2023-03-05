@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example of Linear Gradient left to right</title>
+	<style type="text/css">
+		#grad1{
+			height: 100px;
+			background: -webkit-linear-gradient(left,red,green);
+			/* For-safari 5.1 to 6.0 */
+			background: -o-linear-gradient(right,red, green);
+			/* For-Opera 11.1 to 12.0 */
+			background: -moz-linear-gradient(right,red, green);
+			/* For-Firefox 3.6 to 15 */
+			background: linear-gradient(to right,red, green);
+			/* Standard syntax(must be last) */
+	     }
+	</style>
+</head>
+<body>
+     <h3>Linear Gradient - Left to Right</h3>
+
+     <p>The linear gradient starts at the Left. It will show transition from red to green.</p>
+     <div id="grad1"></div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>EXample of Box Shadow</title>
+	<style type="text/css">
+		body{
+			text-align: center;
+		}
+		div{
+			border: 2px solid #adadad;
+			padding: 10px;
+			width: 50%;
+			margin: 30px;
+		}
+		.hvb{
+            box-shadow: 5px 10px 10px;
+		}
+		.hvbs{
+			box-shadow: 5px 10px 10px 10px;
+		}
+		.hvbsc{
+			box-shadow: 5px 10px 10px orangered;
+		}
+		.box-inset{
+			box-shadow: 5px 10px 10px orangered inset;
+		}
+		.box-initial{
+			box-shadow: box-shadow: 5px 10px 10px orangered initial;
+		}
+		.box-none{
+			box-shadow: box-shadow: 5px 10px 10px orangered none;
+		}
+	</style>
+</head>
+<body>
+    <div class="hvb">
+    	<h1>This div shows only h-offset, v-offset and blur.</h1>
+    </div>
+
+    <div class="hvbs">
+    	<h1>This div shows only h-offset, v-offset, blur and spread attribute.</h1>
+    </div>
+
+    <div class="hvbsc">
+    	<h1>This div shows only h-offset, v-offset, blur, spread and color attribute.</h1>
+    </div>
+
+     <div class="box-inset">
+    	<h1>This div shows shadow with inset properties.</h1>
+    </div>
+
+    <div class="box-initial">
+    	<h1>This div shows shadow with initial properties.</h1>
+    </div>
+
+    <div class="box-none">
+    	<h1>This div shows shadow with none properties.</h1>
+    </div>
+</body>
+</html>

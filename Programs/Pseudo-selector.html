@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example of Pseudo selector</title>
+	<style type="text/css">
+		.background-lightgreen{
+			background-color: lightgreen;
+			padding: 15px;
+			text-align: center;
+		}
+
+		.background-lightgreen:hover{
+			background-color: cyan;
+			color: antiquewhite;
+		}
+
+		.background-anchor{
+			background-color: ghostwhite;
+			text-align: center;
+		}
+
+		.background-anchor a:active{
+			color: green;
+		}
+
+		.background-anchor a:visited{
+			color: cyan;
+		}
+		#visit:visited{
+			color: yellow;
+		}
+		p:lang(fr){
+			color: blueviolet;
+		}
+		input:focus{
+			border: 5px solid darkred;
+			box-shadow: 10px 10px 10px black;
+			color: dodgerblue;
+			width: 350px;
+		}
+	</style>
+</head>
+<body>
+      <div class="background-lightgreen">
+           <p>This is a Div tag.</p>
+
+      </div>
+
+      <div class="background-anchor">
+      	   <a href="https://ticker.finology.in/" target="_blank">This is a link</a>
+      	
+      </div>
+
+       <a id="visited" href="https://ticker.finology.in/" target="_blank">This is a link</a>
+
+
+       <p>This p tag is without lang attribute</p>
+       <p lang="fr">This p tag is with lang attribute</p>
+
+       <input type="text" name="FirstName" placeholder="First Name">
+
+</body>
+</html>

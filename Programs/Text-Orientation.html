@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of Text Orientation</title>
+    <style type="text/css">
+         div{
+           padding: 10px;
+           width: 150px;
+           height: 150px;
+           border: 1px solid lightblue;
+     }
+     #abc{
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+     } 
+     #def{
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+     }
+              
+    </style>
+</head>
+<body>
+     <h1>Text orientation: mixed</h1>
+    <div id="abc">
+        This is very long text that is going out of the div width.
+        This is very long text that is going out of the div width.
+        This is very long text that is going out of the div width.
+    </div>
+
+    <h1>Text orientation: upright</h1>
+    <div id="def">
+        This is very long text that is going out of the div width.
+        This is very long text that is going out of the div width.
+        This is very long text that is going out of the div width.
+    </div>
+
+   
+</body>
+</html>

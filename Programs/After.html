@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example ::after</title>
+	<style type="text/css">
+		body{
+			text-align: left;
+		}
+		h1::after{
+		    content: "Hello Sushanta!";
+		    color: yellowgreen;
+		}
+		h1{
+			color: red;
+		}
+		.curvedarrow{
+			position: relative;
+			width: 0;
+			height: 0;
+			border-top: 10px solid transparent;
+			border-right: 10px solid darkred;
+			transform: rotate(45deg);
+		}
+		.curvedarrow::after{
+			content: "";
+			position: absolute;
+			border: 0 solid transparent;
+			border-top: 3px solid red;
+			border-radius: 20px 0 0;
+			top: -12px;
+			left: -9px;
+			width: 12px;
+			height: 12px;
+			transform: rotate(45deg);
+
+		}
+	</style>
+</head>
+<body>
+     <h1>Welcome to Learnvern!</h1>
+     <h2><span class="curvedarrow"></span>This is an example of ::first-line pseudo element.</h2>
+     <h3>In the first line the "Hello Sushanta!" is added using ::after pseudo element</h3>
+
+     <div class="curvedarrow"></div>
+</body>
+</html>

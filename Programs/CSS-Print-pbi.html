@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example CSS print Property</title>
+	<style type="text/css">
+		div{
+			font-size: 20px;
+			page-break-inside: auto;
+			/*page-break-inside: always;*/
+			page-break-inside: avoid;
+			/*page-break-inside: left;
+			page-break-inside: right;*/
+		}
+	</style>
+</head>
+<body>
+    <h1>Hello! Everyone</h1>
+    <h2>This is Learnvern.</h2>
+    <div>
+    	This is learnvern.This is an amazing place to learn web develepement.
+    	You can learn any programming language and any computer basic courses and many more advance courses from our top level experts and teachers with one on one doubt clearing and problem solving concepts.so please visit our website and grab your dream course for absolutely free and get selected in various companies with good package.
+    </div>
+
+    <br><br>
+    <button oncliclk="print()">print</button>
+
+    <script type="text/javascript">
+    	function printfunction(){
+    		window.print();
+    	}
+    </script>
+</body>
